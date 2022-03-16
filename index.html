@@ -11,21 +11,39 @@
       href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,800&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap"
+      rel="stylesheet"
+    />
     <title>Drawing app</title>
+    <link rel="stylesheet" href="./style/style.css" type="text/css" />
   </head>
   <body>
     <header>
       <h1>deja volar tu imaginación</h1>
     </header>
     <main>
-      <div id="canvas">
-        <canvas></canvas>
+      <div id="lienzo">
+        <canvas id="areaDibujo"></canvas>
       </div>
-      <div id="tools"></div>
+      <div id="tools">
+        <h2>Herramientas</h2>
+        <ul>
+            <li>
+                <p>¿Cómo quieres dibujar?</p>
+            </li>
+            <li>
+                <p>Color del trazo</p>
+            </li>
+            <li>
+                <p>Grosor del trazo</p>
+            </li>
+        </ul>
+      </div>
     </main>
     <footer>
-        <h3>with love - LuMi</h3>
+      <h3>with love - LuMi</h3>
     </footer>
+    <script src="./app/app.js"></script>
   </body>
 </html>
