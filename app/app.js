@@ -15,8 +15,8 @@ var teclas = {
   document.addEventListener("keyup", dibujarTeclado);
   var canvas = document.getElementById("areaDibujo");
   var papel = canvas.getContext("2d");
-  var x = 150;
-  var y = 75;
+  var x = 300;
+  var y = 300;
 
  
   
