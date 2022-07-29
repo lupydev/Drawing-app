@@ -1,45 +1,57 @@
-* {
-  font-family: "Fira Sans", sans-serif;
-  border: 2px solid black;
-  background-color: #1c2c50;
-  color: white;
+html {
+  height: 100vh;
+}
+h1 {
+  margin: 3.5rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  
 }
 body {
   margin: 0;
+  background-color: #191d2b;
+  color: #27ae60;
 }
-header {
-  text-align: center;
-  margin: 0 auto;
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-h1 {
-  font-family: "Grandstander", sans-serif;
-  text-transform: uppercase;
-  font-size: 50px;
+
+#areaDibujo{  
+  background-color: #ffff;
 }
-main {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  height: 800px;
-  margin: 0 20px;
+#tools{
+  margin-top: 2rem;
 }
-canvas {
-  height: 100%;
-  width: 100%;
-  background-color: white;
-}
-h2 {
+#tools h2{
+  font-size: 2.5rem;
   text-align: center;
 }
-select{
-    width: 170px;
+.tools-container{
+  display: flex;
+  gap: 5rem;
 }
-footer {
+label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+label span{
+  font-size: 1.6rem;
+  margin-right: 1.5rem;
+  color: #ffff;
+}
+footer{
+  margin-top: 2rem;
   text-align: center;
 }
-#lienzo {
+h3{
+  font-size: 1.5rem;
+  color: #ffff;
 }
-#tools ul{
-    list-style: none;
-    
-    padding: 0;
+.heart{
+  color: #ff0000;
 }
