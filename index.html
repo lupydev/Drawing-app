@@ -15,8 +15,9 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap"
       rel="stylesheet"
     />
-    <title>Drawing app</title>
+    <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/style.css" type="text/css" />
+    <title>Drawing app</title>
   </head>
   <body>
     <header>
@@ -24,34 +25,39 @@
     </header>
     <main>
       <div id="lienzo">
-        <canvas id="areaDibujo">
+        <canvas id="areaDibujo" width="600px" height="600px">
 
         </canvas>
       </div>
       <div id="tools">
         <h2>Herramientas</h2>
-        <ul>
-          <li>
-            <p>¿Cómo quieres dibujar?</p>
+        <div class="tools-container">
 
-            <select id="mK">
-              <option value="0" class="mK">Mouse</option>
-              <option value="1" class="mK">Teclado</option>
-            </select>
-          </li>
-          <li>
-            <p>Color del trazo: <input type="color" id="color"></p>
+          <label for="color">
             
+            <span>Color del trazo: </span>
+            <input type="color" id="color">
+          </label>
+          <label for="grosor">
+            <span>Grosor del trazo</span>
+            <input type="range" min="2" max="6" value="4" id="slider">
           </li>
-          <li>
-            <p>Grosor del trazo</p>
-            <input type="range" min="1" max="5" value="2" id="slider">
-          </li>
-        </ul>
+        </label>
+        <!-- <label for="mK">
+          
+          <span>¿Cómo quieres dibujar?</span>
+          
+          <select id="mK">
+            <option value="0" class="mK">Mouse</option>
+            <option value="1" class="mK">Teclado</option>
+          </select>
+          
+        </label> -->
+        </div>
       </div>
     </main>
     <footer>
-      <h3>with love - LuMi</h3>
+      <h3>with <span class="heart">❤</span> LuMi</h3>
     </footer>
     <script src="./app/app.js"></script>
   </body>
